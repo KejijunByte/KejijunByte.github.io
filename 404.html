@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小窝坏掉惹 - 404 Ciallo～(∠・ω< )⌒☆！~</title>
+    <link id="icon" rel="shortcut icon" href="./Title.jpg"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 0 30px;
+        }
+        
+        .site-title {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            letter-spacing: 2px;
+        }
+        
+        .site-subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        .nav-list li {
+            padding: 20px;
+        }
+        
+        .nav-list a {
+            text-decoration: none;
+            color: #34495e;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-list a:hover, .nav-list a.active {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .content-section {
+            display: none;
+            margin-bottom: 40px;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-img {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .card:hover .card-img img {
+            transform: scale(1.05);
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .card p {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .contribute-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-top: 40px;
+        }
+        
+        .contribute-section h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .contribute-btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .contribute-btn:hover {
+            background: #2980b9;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+        }
+        
+        .visitor-count {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        
+        .egg-message {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 5px;
+            display: none;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-list li {
+                padding: 10px;
+            }
+            
+            .site-title {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">~404 の Byter小窝~ 404~</h1>
+            <p class="site-subtitle">分享错误、404和锟斤拷的小空间</p>
+        </header>
+        
+
+        <div class="contribute-section">
+            <h1>分享404想法</h2>
+            <p>有兴趣分享你遇到的错误吗？欢迎投稿Byter233@Outlook.com！</p>
+            <p>404 - Ciallo～(∠・ω< )⌒☆！</p>
+        </div>
+        
+        <footer>
+            <p id="current-date">今天是：2023年11月10日</p>
+            <div class="visitor-count" id="visitor-count">你是第<span id="count">1</span>个访问者哦</div>
+            <div class="egg-message" id="egg-message"></div>
+            <p>© 2023~2025 Byterの小窝~ 保留所有权利</p>
+        </footer>
+    </div>
+
+    <script>
+        // 导航切换
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 更新导航激活状态
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 显示对应内容部分
+                const target = this.getAttribute('data-target');
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(target).classList.add('active');
+            });
+        });
+        
+        // 设置当前日期
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = '今天是：' + now.toLocaleDateString('zh-CN', options);
+        
+        // 访问计数功能
+        let count = localStorage.getItem('visitorCount');
+        if (!count) {
+            count = 1;
+        } else {
+            count = parseInt(count) + 1;
+        }
+        localStorage.setItem('visitorCount', count);
+        document.getElementById('count').textContent = count;
+        
+        // 彩蛋逻辑
+        const eggMessages = {
+            66: '恭喜！你是第66位访问者，获得"幸运之星"称号~',
+            888: '哇！888位访问者！发发发！好运将伴随你一整天~',
+            1000: '里程碑！第1000位访问者！感谢大家的支持~',
+            10000: '不可思议！第10000位访问者！前10000位的大家都获得了特别勋章！',
+            100000: '不可思议！第100000位访问者！佛说人只能开心一天，我说让大家每一天都开心~'
+        };
+        
+        if (eggMessages[count]) {
+            const eggElement = document.getElementById('egg-message');
+            eggElement.textContent = eggMessages[count];
+            eggElement.style.display = 'block';
+            
+            // 添加庆祝效果
+            setTimeout(() => {
+                for (let i = 0; i < 30; i++) {
+                    setTimeout(() => {
+                        const confetti = document.createElement('div');
+                        confetti.style.position = 'fixed';
+                        confetti.style.left = Math.random() * 100 + 'vw';
+                        confetti.style.top = '-20px';
+                        confetti.style.width = '10px';
+                        confetti.style.height = '10px';
+                        confetti.style.backgroundColor = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6'][Math.floor(Math.random() * 5)];
+                        confetti.style.borderRadius = '50%';
+                        confetti.style.zIndex = '9999';
+                        document.body.appendChild(confetti);
+                        
+                        // 动画
+                        const animation = confetti.animate([
+                            { top: '-20px', transform: 'rotate(0deg)' },
+                            { top: '100vh', transform: 'rotate(720deg)' }
+                        ], {
+                            duration: 2000 + Math.random() * 3000,
+                            easing: 'cubic-bezier(0.1, 0.5, 0.8, 1)'
+                        });
+                        
+                        animation.onfinish = () => confetti.remove();
+                    }, i * 150);
+                }
+            }, 500);
+        }
+    </script>
+</body>
+</html>
